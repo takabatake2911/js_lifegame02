@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            * {
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+            }
+            header {
+                background-color: green;
+                margin-bottom: 50px;
+                padding: 5%;
+            }
+            header > h1 {
+                color: white;
+            }
+            #root {
+                text-align: center;
+            }
+            #btn-group {
+                margin: 2%;
+                display: flex;
+                justify-content: center;
+            }
+            #btn-group > button {
+                margin: 3% 2%;
+            }
+            p {
+                margin: 0 10%;
+            }
+            footer {
+                margin-top: 10%;
+                background-color: green;
+                padding: 5%;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>ライフゲーム</h1>
+        </header>
+        <div id="root"></div>
+        <div id="btn-group">
+            <button id="nextGenBtn">NEXT</button>
+            <button id="autoPlayBtn">AUTO</button>
+            <button id="stopPlayBtn">STOP</button>
+        </div>
+        <p>クリックするとセルの生存状態を変えられます。</p>
+        <p>NEXTで次の世代に進みます。</p>
+        <p>AUTOで自動で次の世代に進み続けます</p>
+        <p>AUTOの状態からSTOPで停止します。</p>
+        <footer>
+            <h3>ふったー</h3>
+        </footer>
+        <script src="index.js"></script>
+    </body>
+</html>
